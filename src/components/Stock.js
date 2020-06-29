@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Stock = (props) => (
-  <div onClick={() => props.addStock ? props.addStock(props.stock) : props.sellStock(props.stock)}>
+  <div onClick={() => props.addStock ? props.addStock(props.stock) : props.removeStock(props.stock)}>
     <div className="card">
       <div className="card-body">
         <h5 className="card-title">{

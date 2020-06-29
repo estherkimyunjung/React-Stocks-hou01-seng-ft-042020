@@ -12,7 +12,7 @@ class PortfolioContainer extends Component {
             this.props.stocks.map(stock=> 
               <Stock key={stock.id}
                 stock={stock}
-                sellStock={this.props.sellStock}/>
+                removeStock={this.props.removeStock}/>
             )
           }
       </div>

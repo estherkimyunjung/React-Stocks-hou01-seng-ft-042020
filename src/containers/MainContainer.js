@@ -37,7 +37,7 @@ class MainContainer extends Component {
     }
   }
 
-  sellStock = (stock) => {
+  removeStock = (stock) => {
     this.setState({
       portfolioStocks: this.state.portfolioStocks.filter(st => st !== stock)
     })
@@ -84,7 +84,7 @@ class MainContainer extends Component {
             <div className="col-4">
               <PortfolioContainer 
               stocks={this.state.portfolioStocks} 
-              sellStock={this.sellStock}/>
+              removeStock={this.removeStock}/>
             </div>
           </div>
       </div>
